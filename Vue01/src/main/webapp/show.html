@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-test</title>
+    <script src="js/jquery-3.2.1.min.js" ></script>
+    <script src="js/vue.js" ></script>
+    <script src="js/axios-0.18.0.js"></script>
+</head>
+<body>
+    <div id="app">
+<!--
+        <a href="javascprit:#" @click="">查询</a>
+-->
+        <table>
+            <tr>
+                <td>cno</td>
+                <td>cname</td>
+                <td>tno</td>
+            </tr>
+            <tr v-for="(course) in list">
+                <td>{{course.cno}}</td>
+                <td>{{course.cname}}</td>
+                <td>{{course.tno}}</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+<script src="js/count.js"></script>
+</html>
